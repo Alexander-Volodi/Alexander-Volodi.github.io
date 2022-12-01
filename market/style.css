@@ -1,0 +1,31 @@
+body {
+    background-color: #a0a0a0;
+}
+
+.products {
+    padding: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 33%;
+    padding: 10px;
+}
+
+h3 {
+    display: inline-block;
+}
+
+li {
+    margin-left: 20px;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+.products {
+    background-color: rgba(150, 100, 50, 0.5);
+}

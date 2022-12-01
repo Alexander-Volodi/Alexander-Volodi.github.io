@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <style>
+            .logo {
+                width: 100px;
+                margin: 50px 50px 50px 50px;
+            }
+            .contacts {
+                width: fit-content;
+                display: inline-block;
+                background-color: #f5f5f5;
+                height: max-content;
+            }
+            .chat {
+                display: inline-block;
+                width: 850px;
+                height: max-content;
+                background-image: url(telegram.png);
+            }
+            .contact {
+                padding: 3em;
+            }
+            .image {
+                display: inline-block;
+            }
+            .text {
+                display: inline-block;
+                color: #333;
+            }
+            .time {
+                color: #333;
+                display: inline-block;
+            }
+            .contact:hover {
+                background-color: #e5e5e5;
+            }
+            .name {
+                font-size: 2em;
+            }
+            .last-message, .time{
+                font-size: 1.5em;
+            }
+            .chat-name {
+                margin: 10px auto 5px auto;
+                width: fit-content;
+                font-size: 5em;
+                background-color: #cee;
+                color: #333;
+            }
+            .moment, .date, .message, .my-message {
+                width: fit-content;
+                font-size: 2em;
+                color: #222;
+                background-color: #f5f5f5;
+            }
+
+            .moment {
+                background-color: #cee;
+                margin: 10px auto 5px auto;
+            }
+
+            .chat-name, .moment {
+                display: flex;
+                justify-content: center;
+                border-radius: 1.5rem;
+            }
+            .my-message {
+                margin-left: 450px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                border-radius: 2rem;
+            }
+            .message {
+                margin: 10px;
+                padding: 10px;
+                display: flex;
+                justify-content: start;
+                background-color: #f5f5f5;
+                border-radius: 3rem;
+            }
+            .date {
+                border-radius: 1rem;
+                background-color: #cee;
+                margin: auto;
+            }
+            img {
+                height: 5em;
+                width: 5em;
+            }
+             
+            button {
+                background-color: #66bbf3;
+            }
+            button:hover {
+                background-color: #55aaf0;
+            }
+            .menu {
+                display: inline-block;
+                width: fit-content;
+            }
+
+            body {
+                background-color: #f0f0f0;
+            }
+
+            button {
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo"><img src="logo.png"></div>
+            <div class="contacts">
+                <ul>
+                    <li>
+                        <a href="#vasya">
+                            <div class="contact">
+                                <img src="vasya.png" class="image">
+                                <div class="text">
+                                    <div class="name">Вася</div>
+                                    <div class="last-message">Пойдём гулять после ...</div>
+                                </div>
+                                <div class="time">14:22</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#oleg">
+                            <div class="contact">
+                                <img src="oleg.png" class="image">
+                                <div class="text">
+                                    <div class="name">Олег</div>
+                                    <div class="last-message">Когда встретимся с Васей?</div>
+                                </div>
+                                <div class="time">14:37</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#igor">
+                            <div class="contact">
+                                <img src="igor.png"  class="image">
+                                <div class="text">
+                                    <div class="name">Игорь</div>
+                                    <div class="last-message">Nc3</div>
+                                </div>
+                                <div class="time">15:00</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="chat">
+                <div>
+                    <div class="chat-name">Игорь</div>
+                    <div class="moment">last seen: now</div>
+                </div>
+                <div>
+                    <div class="date">September 12</div>
+                    <div class="my-message">
+                        <span>Игорь, давай в шахматы!<br/>Я черными.</span>
+                        <span>14:55</span>
+                    </div>
+                    <div class="message">
+                        <span>Поехали. e2-e4.</span>
+                        <span>14:58</span>
+                    </div>
+                    <div class="my-message">
+                        <span>e7-e5</span>
+                        <span>14:59</span>
+                    </div>
+                    <div class="message">
+                        <span>Nc3</span>
+                        <span>15:00</span>
+                    </div>
+                </div>
+                <div class="my-message">
+                    <form action="/send_message" method="POST">
+                        <textarea></textarea>
+                        <button type="submit"><img src="send.png"></button>
+                    </form>
+                </div>
+            </div>
+    </body>
+</html>
